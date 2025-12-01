@@ -548,67 +548,11 @@ color: var(--text-theme-secondary)
 .projectContainer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  position: relative;
-  width: 100%;
-}
-
-.projectWrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  transition: transform 0.4s ease;
-}
-
-.projectItem {
-  flex: 1;
-  transition: transform 0.4s ease, filter 0.4s ease;
-  z-index: 1;
-  margin-bottom: 1rem;
-}
-
-.projectItem video {
-  border-radius: 10px;
-  margin-top: 5px;
-}
-
-.projectInfo {
-  position: absolute;
-  left: -300px; /* hidden to the left */
-  width: 280px;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.85);
-  color: #fff;
-  border-radius: 8px;
-  transition: left 0.4s ease, opacity 0.4s ease;
-  opacity: 0;
-  pointer-events: none;
-  font-size: 0.95rem;
-}
-
-/* Hover effect */
-.projectWrapper:hover .projectItem {
-  transform: translateX(100px); /* move right */
-}
-
-.projectWrapper:hover .projectInfo {
-  left: -300px; /* slides out to left */
-  opacity: 1;
-}
-
-/* Blur other projects */
-.projectContainer:hover .projectWrapper:not(:hover) .projectItem {
-  filter: blur(3px) brightness(0.6);
-}
-.projectContainer {
-  display: flex;
-  flex-direction: column;
   gap: 40px; /* space between each project */
 }
 
 .projectWrapper {
   position: relative;
-  overflow: hidden;
 }
 
 .projectItem {
@@ -629,23 +573,28 @@ color: var(--text-theme-secondary)
 
 .projectInfo {
   position: absolute;
-  left: -100%;
-  top: 0;
+  left: 0; /* start at left edge */
+  top: -10px; /* slightly above the project card */
   width: 100%;
   max-width: 400px;
   padding: 20px;
   color: var(--text-theme-primary);
-  background: rgba(0, 0, 0, 0.7);
-  transition: left 0.5s ease;
+  background: rgba(0, 0, 0, 0.85);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  z-index: 10; /* above everything */
   pointer-events: none;
+  transform: translateX(-110%); /* start off to the left */
 }
 
 .projectItem:hover + .projectInfo {
-  left: 0; /* slides in from the left */
+  transform: translateX(0); /* slide in from the left */
+  opacity: 1;
 }
 
 .projectInfo p {
   margin: 0;
   font-size: 16px;
 }
+
 
