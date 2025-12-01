@@ -552,48 +552,24 @@ color: var(--text-theme-secondary)
 }
 
 .projectWrapper {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectItem {
-  transition: transform 0.5s ease, filter 0.5s ease;
-  z-index: 2;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* small offset between card and video */
 }
 
-.projectWrapper:hover .projectItem:not(:hover) {
-  filter: blur(3px);
-  opacity: 0.6;
-}
-
-.projectItem:hover {
-  transform: translateX(30px);
-  z-index: 5;
+.projectItem video {
+  width: 100%;
+  border-radius: 8px;
 }
 
 .projectInfo {
-  position: absolute;
-  left: 0; /* start at left edge */
-  top: -10px; /* slightly above the project card */
-  width: 100%;
-  max-width: 400px;
-  padding: 20px;
+  margin-top: 5px; /* offset below the video */
   color: var(--text-theme-primary);
-  background: rgba(0, 0, 0, 0.85);
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0;
-  z-index: 10; /* above everything */
-  pointer-events: none;
-  transform: translateX(-110%); /* start off to the left */
-}
-
-.projectItem:hover + .projectInfo {
-  transform: translateX(0); /* slide in from the left */
-  opacity: 1;
-}
-
-.projectInfo p {
-  margin: 0;
   font-size: 16px;
 }
 
