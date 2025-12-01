@@ -552,20 +552,18 @@ color: var(--text-theme-secondary)
   gap: 100px;
 }
 
-/* FIXED */
 .projectItem {
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 24px; /* normal spacing */
 }
 
 .projectItem video {
-  width: auto;          /* keep natural width */
-  height: auto;         /* auto = natural height */
-  transform: scale(2);  /* scale 2x */
-  transform-origin: top left; /* prevent shifting */
+  width: 200%;    /* scale up properly */
+  height: auto;
 }
+
 
 .projectInfo {
   max-width: 500px;
