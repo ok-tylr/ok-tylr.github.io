@@ -548,7 +548,7 @@ color: var(--text-theme-secondary)
 .projectContainer {
   display: flex;
   flex-direction: column;
-  gap: 40px; /* space between each project */
+  gap: 400px; /* space between each project */
 }
 
 .projectWrapper {
@@ -570,7 +570,7 @@ color: var(--text-theme-secondary)
 .projectInfo {
   margin-top: 5px; /* offset below the video */
   color: var(--text-theme-primary);
-  font-size: 16px;
+  font-size: 0px;
 }
 
 
