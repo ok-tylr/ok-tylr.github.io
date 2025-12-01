@@ -539,11 +539,10 @@ footer a{
 text-decoration: none;
 color: var(--text-theme-secondary)
 }
-
 .projectContainer {
   display: flex;
   flex-direction: column;
-  gap: 80px; /* spacing between projects */
+  gap: 80px;
 }
 
 .projectWrapper {
@@ -553,8 +552,16 @@ color: var(--text-theme-secondary)
   gap: 40px;
 }
 
+/* FIXED */
+.projectItem {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .projectItem video {
-  width: 400px;   /* you may adjust */
+  width: auto;
   height: auto;
   border-radius: 10px;
 }
@@ -565,7 +572,6 @@ color: var(--text-theme-secondary)
   line-height: 1.4;
 }
 
-/* Mobile-friendly layout */
 @media (max-width: 768px) {
   .projectWrapper {
     flex-direction: column;
@@ -576,5 +582,4 @@ color: var(--text-theme-secondary)
     width: 100%;
   }
 }
-
 
