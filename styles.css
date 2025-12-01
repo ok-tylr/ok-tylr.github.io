@@ -553,15 +553,17 @@ color: var(--text-theme-secondary)
 }
 
 .projectItem {
-  height: auto;
   display: flex;
   flex-direction: column;
-  gap: 24px; /* normal spacing */
+  gap: 16px;           /* spacing between heading + video */
+  margin-bottom: 80px; /* space between each project */
 }
 
 .projectItem video {
-  width: 200%;    /* scale up properly */
-  height: auto;
+  width: 50%;         /* fill container */
+  height: auto;        /* keep aspect ratio */
+  display: block;
+  border-radius: 8px;  /* optional, looks cleaner */
 }
 
 
