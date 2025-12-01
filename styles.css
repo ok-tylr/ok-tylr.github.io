@@ -540,37 +540,41 @@ text-decoration: none;
 color: var(--text-theme-secondary)
 }
 
-.projects {
-  background-color: var(--bg-theme-primary);
-  padding: 2rem 0;
-}
-
 .projectContainer {
   display: flex;
   flex-direction: column;
-  gap: 400px; /* space between each project */
+  gap: 80px; /* spacing between projects */
 }
 
 .projectWrapper {
   display: flex;
-  flex-direction: column;
-}
-
-.projectItem {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* small offset between card and video */
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 .projectItem video {
-  width: 100%;
-  border-radius: 8px;
+  width: 400px;   /* you may adjust */
+  height: auto;
+  border-radius: 10px;
 }
 
 .projectInfo {
-  margin-top: 5px; /* offset below the video */
-  color: var(--text-theme-primary);
-  font-size: 0px;
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 768px) {
+  .projectWrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projectItem video {
+    width: 100%;
+  }
 }
 
 
