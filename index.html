@@ -1,108 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png?v8=qAJ44G5Bm7">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png?v8=qAJ44G5Bm7">
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg?v8=qAJ44G5Bm7" color="#885bd5">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v8=qAJ44G5Bm7">
+    <meta name="msapplication-TileColor" content="#603cba">
 
-        body {
-            background-color: #1e1e1e;
-            color: #f5f5f5;
-            line-height: 1.6;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6c63ff" />
+    <meta
+      name="Saad Pasta Portfolio"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png?v8=qAJ44G5Bm7">
+    <meta property="og:title" content="Saad Pasta Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://developerfolio.js.org/" />
+    <meta property="og:image" content="https://developerfolio.js.org/static/media/developerActivity.59389695.svg" />
+    <link rel=preload href="/static/media/Montserrat-Regular.ee653992.ttf" as="font" type="font/woff" crossorigin>
+    <link rel=preload href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin>
+	<!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135618960-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        header {
-            background-color: #111;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 2px solid #333;
-        }
+      gtag('config', 'UA-135618960-2');
+    </script>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-        header h1 {
-            font-size: 2em;
-            margin-bottom: 5px;
-        }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.13.0/css/all.min.css">
 
-        nav a {
-            color: #f5f5f5;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
 
-        nav a:hover {
-            color: #00bfff;
-        }
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Saad Pasta Portfolio</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-        section {
-            margin-bottom: 50px;
-        }
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-        section h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-
-        section p {
-            font-size: 1.1em;
-            line-height: 1.8;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            border-top: 2px solid #333;
-            background-color: #111;
-            color: #aaa;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>My Cool GitHub Page</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my GitHub Pages site! This is a basic template that you can customize with your own content, projects, and styles.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Here you can showcase your projects. Add links, images, or descriptions of the work you want to highlight.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Add your contact info or social links here so people can reach you.</p>
-        </section>
-    </main>
-
-    <footer>
-        &copy; 2025 My GitHub Page
-    </footer>
-</body>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
